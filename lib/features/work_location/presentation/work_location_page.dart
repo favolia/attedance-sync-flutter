@@ -1,6 +1,5 @@
 import 'package:attendance_sync/features/work_location/presentation/widget/table_work_location.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class WorkLocationPage extends StatelessWidget {
   const WorkLocationPage({super.key});
@@ -26,10 +25,7 @@ class WorkLocationPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton.icon(
-                  onPressed: () {
-                    GoRouter.of(context)
-                        .go('/work-location/edit/:workLocationId');
-                  },
+                  onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
                   ),

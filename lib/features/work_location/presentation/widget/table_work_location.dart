@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class TableWorkLocation extends StatelessWidget {
   const TableWorkLocation({super.key});
@@ -111,7 +112,10 @@ class TableWorkLocation extends StatelessWidget {
               Row(
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      GoRouter.of(context)
+                          .go('/work-location/edit/:workLocationId');
+                    },
                     icon: const Icon(Icons.edit),
                     color: Colors.blue,
                   ),

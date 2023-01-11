@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TableEditWorkLocation extends StatelessWidget {
-  const TableEditWorkLocation({super.key});
+class TableWorkLocation extends StatelessWidget {
+  const TableWorkLocation({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -111,6 +111,9 @@ class TableEditWorkLocation extends StatelessWidget {
                     onPressed: () {},
                     icon: const Icon(Icons.edit),
                     color: Colors.blue,
+                  ),
+                  const SizedBox(
+                    width: 10,
                   ),
                   IconButton(
                     onPressed: () {},
