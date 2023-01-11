@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TableMesinFinger extends StatelessWidget {
-  const TableMesinFinger({super.key});
+class TableMachineFinger extends StatelessWidget {
+  const TableMachineFinger({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +65,7 @@ class TableMesinFinger extends StatelessWidget {
                   IconButton(
                     onPressed: () {},
                     icon: const Icon(Icons.delete_forever),
-                    color: Colors.black,
+                    color: Colors.red,
                   ),
                 ],
               ),

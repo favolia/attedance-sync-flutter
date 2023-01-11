@@ -1,4 +1,4 @@
-import 'package:attendance_sync/dashboard.dart';
+import 'package:attendance_sync/router.dart';
 import 'package:flutter/material.dart';
 
 class Apps extends StatelessWidget {
@@ -6,9 +6,9 @@ class Apps extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp.router(
       title: 'attendance sync',
-      home: Dashboard(),
+      routerConfig: router,
       debugShowCheckedModeBanner: false,
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -22,9 +23,10 @@ class AppDrawer extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           Column(
-            children: const [
+            children: [
               ListTile(
-                title: Text(
+                onTap: () => context.go('/home'),
+                title: const Text(
                   'Home',
                   style: TextStyle(
                     color: Color(0xC5FFFFFF),
@@ -32,13 +34,14 @@ class AppDrawer extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                leading: Icon(
+                leading: const Icon(
                   Icons.dashboard,
                   color: Colors.white,
                 ),
               ),
               ListTile(
-                title: Text(
+                onTap: () => context.go('/machine-finger'),
+                title: const Text(
                   'Mesin Finger',
                   style: TextStyle(
                     color: Color(0xC5FFFFFF),
@@ -46,13 +49,14 @@ class AppDrawer extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                leading: Icon(
+                leading: const Icon(
                   Icons.fingerprint,
                   color: Colors.white,
                 ),
               ),
               ListTile(
-                title: Text(
+                onTap: () => context.go('/work-location'),
+                title: const Text(
                   'Lokasi Kerja',
                   style: TextStyle(
                     color: Color(0xC5FFFFFF),
@@ -60,13 +64,14 @@ class AppDrawer extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                leading: Icon(
+                leading: const Icon(
                   Icons.location_city,
                   color: Colors.white,
                 ),
               ),
               ListTile(
-                title: Text(
+                onTap: () => context.go('/employee'),
+                title: const Text(
                   'Daftar Karyawan',
                   style: TextStyle(
                     color: Color(0xC5FFFFFF),
@@ -74,13 +79,14 @@ class AppDrawer extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                leading: Icon(
+                leading: const Icon(
                   Icons.people,
                   color: Colors.white,
                 ),
               ),
               ListTile(
-                title: Text(
+                onTap: () => context.go('/setting'),
+                title: const Text(
                   'Pengaturan',
                   style: TextStyle(
                     color: Color(0xC5FFFFFF),
@@ -88,7 +94,7 @@ class AppDrawer extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                leading: Icon(
+                leading: const Icon(
                   Icons.settings,
                   color: Colors.white,
                 ),

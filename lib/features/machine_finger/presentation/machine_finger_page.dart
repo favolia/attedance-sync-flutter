@@ -1,8 +1,8 @@
-import 'package:attendance_sync/page/widgets/table_mesin_finger.dart';
+import 'package:attendance_sync/features/machine_finger/presentation/widget/table_machine_finger.dart';
 import 'package:flutter/material.dart';
 
-class MesinFingerPage extends StatelessWidget {
-  const MesinFingerPage({super.key});
+class MachineFingerPage extends StatelessWidget {
+  const MachineFingerPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class MesinFingerPage extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const TableMesinFinger(),
+            const TableMachineFinger(),
           ],
         ),
       ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class PengaturanPage extends StatelessWidget {
-  const PengaturanPage({super.key});
+class SettingPage extends StatelessWidget {
+  const SettingPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -78,8 +78,8 @@ class PengaturanPage extends StatelessWidget {
                             ),
                           ),
                           DropdownMenuItem(
-                            value: 'Tidak Aktif',
-                            child: Text('Tidak Aktif'),
+                            value: 'Nonaktif',
+                            child: Text('Nonaktif'),
                           ),
                         ],
                       ),

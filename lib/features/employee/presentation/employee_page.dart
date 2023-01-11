@@ -1,8 +1,8 @@
-import 'package:attendance_sync/page/widgets/table_daftar_karyawan.dart';
+import 'package:attendance_sync/features/employee/presentation/widget/table_employee.dart';
 import 'package:flutter/material.dart';
 
-class DaftarKaryawanPage extends StatelessWidget {
-  const DaftarKaryawanPage({super.key});
+class EmployeePage extends StatelessWidget {
+  const EmployeePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -86,7 +86,7 @@ class DaftarKaryawanPage extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const TableDaftarKaryawan(),
+            const TableEmployee(),
           ],
         ),
       ),
