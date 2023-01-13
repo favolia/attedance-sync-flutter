@@ -11,7 +11,7 @@ class EmployeePage extends StatelessWidget {
         elevation: 0.0,
         foregroundColor: Colors.blue,
         title: const Text('Daftar Karyawan'),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
       ),
       body: Container(
         padding: const EdgeInsets.only(right: 40, left: 20),

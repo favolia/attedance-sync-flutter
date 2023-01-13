@@ -11,10 +11,10 @@ class SettingPage extends StatelessWidget {
         elevation: 0.0,
         foregroundColor: Colors.blue,
         title: const Text('Pengaturan'),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
       ),
       body: Container(
-        padding: const EdgeInsets.only(right: 40, left: 20, top: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 30),
         child: Column(
           children: [
             Row(

@@ -11,7 +11,7 @@ class MachineFingerPage extends StatelessWidget {
         elevation: 0.0,
         foregroundColor: Colors.blue,
         title: const Text('Mesin Finger'),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
       ),
       body: Container(
         padding: const EdgeInsets.only(right: 40, left: 20),
