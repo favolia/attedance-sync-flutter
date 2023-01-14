@@ -1,4 +1,4 @@
-import 'package:attendance_sync/features/work_location/presentation/widget/table_work_location.dart';
+import 'widget/table_work_location.dart';
 import 'package:flutter/material.dart';
 
 class WorkLocationPage extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:attendance_sync/common/widgets/app_drawer.dart';
+import '../../../../common/widgets/app_drawer.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {

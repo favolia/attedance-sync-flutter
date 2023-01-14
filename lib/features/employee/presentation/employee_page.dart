@@ -1,4 +1,4 @@
-import 'package:attendance_sync/features/employee/presentation/widget/table_employee.dart';
+import 'widget/table_employee.dart';
 import 'package:flutter/material.dart';
 
 class EmployeePage extends StatelessWidget {

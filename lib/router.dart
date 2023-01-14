@@ -1,11 +1,12 @@
-import 'package:attendance_sync/features/dashboard/presentation/home/dashboard.dart';
-import 'package:attendance_sync/features/dashboard/presentation/home/home_page.dart';
-import 'package:attendance_sync/features/employee/presentation/employee_page.dart';
-import 'package:attendance_sync/features/machine_finger/presentation/machine_finger_page.dart';
-import 'package:attendance_sync/features/setting/presentation/setting_page.dart';
-import 'package:attendance_sync/features/work_location/presentation/edit_work_location_page.dart';
-import 'package:attendance_sync/features/work_location/presentation/work_location_page.dart';
 import 'package:go_router/go_router.dart';
+
+import 'features/dashboard/presentation/home/dashboard.dart';
+import 'features/dashboard/presentation/home/home_page.dart';
+import 'features/employee/presentation/employee_page.dart';
+import 'features/machine_finger/presentation/machine_finger_page.dart';
+import 'features/setting/presentation/setting_page.dart';
+import 'features/work_location/presentation/edit_work_location_page.dart';
+import 'features/work_location/presentation/work_location_page.dart';
 
 final router = GoRouter(
   initialLocation: '/home',

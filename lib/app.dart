@@ -1,5 +1,6 @@
-import 'package:attendance_sync/router.dart';
 import 'package:flutter/material.dart';
+
+import 'router.dart';
 
 class Apps extends StatelessWidget {
   const Apps({super.key});

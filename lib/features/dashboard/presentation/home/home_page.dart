@@ -1,4 +1,4 @@
-import 'package:attendance_sync/features/dashboard/presentation/home/widgets/table_log.dart';
+import 'widgets/table_log.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

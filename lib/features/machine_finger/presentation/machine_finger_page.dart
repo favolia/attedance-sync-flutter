@@ -1,4 +1,4 @@
-import 'package:attendance_sync/features/machine_finger/presentation/widget/table_machine_finger.dart';
+import 'widget/table_machine_finger.dart';
 import 'package:flutter/material.dart';
 
 class MachineFingerPage extends StatelessWidget {
