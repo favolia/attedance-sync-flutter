@@ -18,15 +18,24 @@ final router = GoRouter(
       routes: [
         GoRoute(
           path: '/home',
-          builder: (context, state) => const HomePage(),
+          pageBuilder: (context, state) => NoTransitionPage(
+            key: state.pageKey,
+            child: const HomePage(),
+          ),
         ),
         GoRoute(
           path: '/machine-finger',
-          builder: (context, state) => const MachineFingerPage(),
+          pageBuilder: (context, state) => NoTransitionPage(
+            key: state.pageKey,
+            child: const MachineFingerPage(),
+          ),
         ),
         GoRoute(
           path: '/work-location',
-          builder: (context, state) => const WorkLocationPage(),
+          pageBuilder: (context, state) => NoTransitionPage(
+            key: state.pageKey,
+            child: const WorkLocationPage(),
+          ),
           routes: [
             // GoRoute(
             //   name: 'addWorkLocation',
@@ -44,11 +53,17 @@ final router = GoRouter(
         ),
         GoRoute(
           path: '/employee',
-          builder: (context, state) => const EmployeePage(),
+          pageBuilder: (context, state) => NoTransitionPage(
+            key: state.pageKey,
+            child: const EmployeePage(),
+          ),
         ),
         GoRoute(
           path: '/setting',
-          builder: (context, state) => const SettingPage(),
+          pageBuilder: (context, state) => NoTransitionPage(
+            key: state.pageKey,
+            child: const SettingPage(),
+          ),
         ),
       ],
     ),
