@@ -39,10 +39,12 @@ class TableMachineFinger extends StatelessWidget {
       rows: <DataRow>[
         DataRow(
           cells: <DataCell>[
-            const DataCell(Text(
-              '192.168.23.40',
-              style: TextStyle(fontSize: 12),
-            )),
+            const DataCell(
+              Text(
+                '192.168.23.40',
+                style: TextStyle(fontSize: 12),
+              ),
+            ),
             const DataCell(Text(
               'De',
               style: TextStyle(fontSize: 12),
@@ -56,6 +58,7 @@ class TableMachineFinger extends StatelessWidget {
                 children: [
                   IconButton(
                     onPressed: () {},
+                    splashRadius: 15,
                     icon: const Icon(Icons.edit),
                     color: Colors.blue,
                   ),
@@ -64,6 +67,7 @@ class TableMachineFinger extends StatelessWidget {
                   ),
                   IconButton(
                     onPressed: () {},
+                    splashRadius: 15,
                     icon: const Icon(Icons.delete_forever),
                     color: Colors.red,
                   ),
