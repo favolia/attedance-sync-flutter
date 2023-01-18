@@ -17,8 +17,8 @@ class EditWorkLocationPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0.0,
       ),
-      body: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [

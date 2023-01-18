@@ -1,3 +1,5 @@
+import 'package:go_router/go_router.dart';
+
 import 'widget/table_machine_finger.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +27,10 @@ class MachineFingerPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    GoRouter.of(context)
+                        .go('/machine-finger/add/:addMachineFingerPage');
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
                   ),
