@@ -1,4 +1,4 @@
-import 'worklocation.dart';
+import '../../../work_location/domain/entity/worklocation.dart';
 
 class MachineFinger {
   final String ipAddress;

@@ -1,4 +1,4 @@
-import '../../domain/machine_finger.dart';
+import '../../domain/entity/machine_finger.dart';
 
 class MachineFingerModel extends MachineFinger {
   MachineFingerModel({

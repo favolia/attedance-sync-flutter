@@ -1,8 +1,19 @@
+import 'dart:io';
+
 import 'package:get_it/get_it.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:path_provider/path_provider.dart';
 
-GetIt locator = GetIt.I();
+import 'features/company/application/company_service.dart';
+
+GetIt locator = GetIt.instance;
 
 Future<void> setupLocator() async {
-  await Hive.initFlutter();
+  Directory appDocDir = await getApplicationDocumentsDirectory();
+  String appDocPath = '${appDocDir.path}\\ATTSYNC';
+  await Hive.initFlutter(appDocPath);
+
+  locator.registerSingletonAsync(() => CompanyService.initService());
+
+  await locator.allReady();
 }

@@ -1,16 +1,22 @@
-import '../../domain/interface/machine_finger_interface.dart';
-import '../../domain/machine_finger.dart';
+import '../../domain/entity/machine_finger.dart';
 
-class MachineFingerRepository implements MachineFingerInterface {
+import '../../domain/repository/machine_finger_repository.dart';
+import '../data_sources/machine_finger_local_data_provider.dart';
+
+class MachineFingerRepositoryImpl implements MachineFingerRepository {
+  final MachineFingerLocalDataProvider machineFingerLocalDataProvider;
+
+  MachineFingerRepositoryImpl({
+    required this.machineFingerLocalDataProvider,
+  });
+
   @override
-  Future<MachineFinger> getMachineFinger(String code) {
-    // TODO: implement getMachineFinger
-    throw UnimplementedError();
+  Future<MachineFinger> getMachineFinger(String ipAddress) {
+    return machineFingerLocalDataProvider.getMachineFinger(ipAddress);
   }
 
   @override
-  Future<List<MachineFinger>> getMachineFingers() {
-    // TODO: implement getMachineFingers
+  Future<List<MachineFinger>> fetchMachineFinger() {
     throw UnimplementedError();
   }
 }
