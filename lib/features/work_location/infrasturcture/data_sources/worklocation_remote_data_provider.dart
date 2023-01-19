@@ -10,7 +10,7 @@ class WorkLocationRemoteDataProvider {
       'hris.bosowa.co.id',
       '/hris_api/realtime/worklocation',
       {
-        'company_id': company.id,
+        'company_id': company.id.toString(),
       },
     );
 
