@@ -1,0 +1,4 @@
+enum MachineFingerBrand {
+  solution,
+  fingerSpot,
+}

@@ -10,6 +10,13 @@ class TableMachineFinger extends StatelessWidget {
         DataColumn(
           label: Expanded(
             child: Text(
+              'Deskripsi',
+            ),
+          ),
+        ),
+        DataColumn(
+          label: Expanded(
+            child: Text(
               'IP',
             ),
           ),
@@ -17,45 +24,59 @@ class TableMachineFinger extends StatelessWidget {
         DataColumn(
           label: Expanded(
             child: Text(
-              'Lokasi',
+              'Database Lokal',
             ),
           ),
         ),
         DataColumn(
           label: Expanded(
             child: Text(
-              'Status Sinkron',
+              'Lokasi Kerja',
             ),
           ),
         ),
         DataColumn(
           label: Expanded(
             child: Text(
-              '',
+              'Status Sinkronisasi',
             ),
           ),
         ),
       ],
       rows: <DataRow>[
         DataRow(
+          selected: false,
+          onSelectChanged: (value) {},
           cells: <DataCell>[
             const DataCell(
               Text(
-                '192.168.23.40',
+                'Menara Karya - Jakarta',
                 style: TextStyle(fontSize: 12),
               ),
             ),
             const DataCell(Text(
-              'De',
+              '192.168.1.1',
               style: TextStyle(fontSize: 12),
             )),
             const DataCell(Text(
-              'Aktif',
+              'C:/att.mdb',
+              style: TextStyle(fontSize: 12),
+            )),
+            const DataCell(Text(
+              'C:/att.mdb',
               style: TextStyle(fontSize: 12),
             )),
             DataCell(
               Row(
                 children: [
+                  Transform.scale(
+                    scale: 0.8,
+                    child: Switch(
+                      splashRadius: 10,
+                      value: false,
+                      onChanged: (value) {},
+                    ),
+                  ),
                   IconButton(
                     onPressed: () {},
                     splashRadius: 15,

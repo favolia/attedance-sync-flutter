@@ -19,20 +19,17 @@ class WorkLocationAdapter extends TypeAdapter<WorkLocation> {
     return WorkLocation(
       name: fields[0] as String,
       code: fields[1] as String,
-      company: fields[2] as Company,
     );
   }
 
   @override
   void write(BinaryWriter writer, WorkLocation obj) {
     writer
-      ..writeByte(3)
+      ..writeByte(2)
       ..writeByte(0)
       ..write(obj.name)
       ..writeByte(1)
-      ..write(obj.code)
-      ..writeByte(2)
-      ..write(obj.company);
+      ..write(obj.code);
   }
 
   @override

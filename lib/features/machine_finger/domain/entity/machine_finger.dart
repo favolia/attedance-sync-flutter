@@ -1,15 +1,58 @@
-import '../../../work_location/domain/entity/worklocation.dart';
+import 'fingerspot.dart';
+import 'machine_finger_brand.dart';
+import 'solution.dart';
+import 'worklocation_config.dart';
 
-class MachineFinger {
-  final String ipAddress;
+abstract class MachineFinger {
+  final MachineFingerBrand brand;
   final String description;
-  final bool enableDownload;
-  final List<WorkLocation> worklocations;
+  final List<WorkLocationConfig> workLocationConfigs;
+  final bool enableSync;
 
-  MachineFinger({
-    required this.ipAddress,
-    required this.description,
-    required this.enableDownload,
-    required this.worklocations,
-  });
+  Future<void> downloadFromLocalDB();
+
+  factory MachineFinger.createSolution({
+    required String ipAddress,
+    required String databasePath,
+    required String description,
+    List<WorkLocationConfig> workLocationConfigs = const [],
+    bool enableSync = false,
+  }) {
+    return Solution(
+      ipAddress: ipAddress,
+      dbPath: databasePath,
+      description: description,
+      workLocationConfigs: workLocationConfigs,
+      enableSync: enableSync,
+    );
+  }
+
+  factory MachineFinger.createFingerSpot({
+    required String username,
+    required String password,
+    required String server,
+    required String databaseName,
+    required int port,
+    required String description,
+    List<WorkLocationConfig> workLocationConfigs = const [],
+    bool enableSync = false,
+  }) {
+    return FingerSpot(
+      username: username,
+      password: password,
+      server: server,
+      databaseName: databaseName,
+      port: port,
+      description: description,
+      enableSync: enableSync,
+      workLocationConfigs: workLocationConfigs,
+    );
+  }
+
+  MachineFinger(
+    this.description,
+    this.brand,
+    this.workLocationConfigs,
+    this.enableSync,
+  );
 }

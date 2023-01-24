@@ -1,7 +1,7 @@
 import '../../company/domain/entity/company.dart';
 import '../domain/entity/worklocation.dart';
-import '../infrasturcture/data_sources/worklocation_remote_data_provider.dart';
-import '../infrasturcture/worklocation_repository.dart';
+import '../infrastructure/data_sources/worklocation_remote_data_provider.dart';
+import '../infrastructure/worklocation_repository.dart';
 
 class WorkLocationService {
   final WorkLocationRepository workLocationRepository;
@@ -13,6 +13,10 @@ class WorkLocationService {
       workLocationRepository: WorkLocationRepository(
           workLocationRemoteDataProvider: WorkLocationRemoteDataProvider()),
     );
+  }
+
+  Future<List<WorkLocation>> fetchWorkLocation() async {
+    return await workLocationRepository.fetchWorkLocation();
   }
 
   Future<List<WorkLocation>> getWorklocationByCompany(Company company) async {

@@ -54,21 +54,21 @@ class AppDrawer extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              ListTile(
-                onTap: () => context.go('/work-location'),
-                title: const Text(
-                  'Lokasi Kerja',
-                  style: TextStyle(
-                    color: Color(0xC5FFFFFF),
-                    fontSize: 15,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                leading: const Icon(
-                  Icons.location_city,
-                  color: Colors.white,
-                ),
-              ),
+              // ListTile(
+              //   onTap: () => context.go('/work-location'),
+              //   title: const Text(
+              //     'Lokasi Kerja',
+              //     style: TextStyle(
+              //       color: Color(0xC5FFFFFF),
+              //       fontSize: 15,
+              //       fontWeight: FontWeight.w600,
+              //     ),
+              //   ),
+              //   leading: const Icon(
+              //     Icons.location_city,
+              //     color: Colors.white,
+              //   ),
+              // ),
               ListTile(
                 onTap: () => context.go('/employee'),
                 title: const Text(

@@ -7,6 +7,10 @@ class WorkLocationRepository {
 
   WorkLocationRepository({required this.workLocationRemoteDataProvider});
 
+  Future<List<WorkLocation>> fetchWorkLocation() async {
+    return await workLocationRemoteDataProvider.fetchWorkLocation();
+  }
+
   Future<List<WorkLocation>> getWorklocationByCompany(Company company) async {
     return await workLocationRemoteDataProvider
         .getWorklocationByCompany(company);

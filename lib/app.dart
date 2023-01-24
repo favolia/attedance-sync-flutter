@@ -10,6 +10,9 @@ class Apps extends StatelessWidget {
     return MaterialApp.router(
       title: 'attendance sync',
       routerConfig: router,
+      theme: ThemeData(
+        fontFamily: 'Montserrat',
+      ),
       debugShowCheckedModeBanner: false,
     );
   }
